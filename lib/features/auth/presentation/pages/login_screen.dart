@@ -45,7 +45,7 @@ class LoginScreen extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                 ),
                 SizedBox(
-                  height: 120,
+                  height: 290,
                 ),
                 // Spacer(),
                 ElevatedButton(

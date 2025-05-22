@@ -1,0 +1,300 @@
+
+{
+  "data": [
+    {
+      "name": "Sajek Valley",
+      "description": "Sajek Valley is a popular tourist destination located in Rangamati, known for its scenic beauty and cloud views.",
+      "images": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sajek_Valley_20161205.jpg",
+      "type": "Mountain",
+      "location": "Rangamati, Chittagong",
+      "latitude": 23.3050,
+      "longitude": 91.7557
+    },
+    {
+      "name": "Nilgiri",
+      "description": "Nilgiri is one of the highest peaks in Bangladesh located in Bandarban.",
+      "images": "https://steemitimages.com/p/3W72119s5BjWMGm4Xa2MvD5AT2bJsSA8F9WeC71v1s1fKfGkK9mMKuc3LcvF4KigbWg9UsrpEPGLGGtkNXYevU1HvAzBWdTTgdgNKisGNF2X8c6DaP95h8?format=match&mode=fit",
+      "type": "Mountain",
+      "location": "Bandarban, Chittagong",
+      "latitude": 21.8823,
+      "longitude": 92.2159
+    },
+    {
+      "name": "Keokradong",
+      "description": "Keokradong is one of the tallest peaks in Bangladesh, ideal for trekkers.",
+      "images": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/81/9d/cc.jpg",
+      "type": "Mountain",
+      "location": "Bandarban, Chittagong",
+      "latitude": 21.8771,
+      "longitude": 92.2397
+    },
+    {
+      "name": "Tajingdong",
+      "description": "Tajingdong is the highest mountain in Bangladesh, popular among adventure lovers.",
+      "images": "https://cdn.daily-sun.com/public/news_images/2020/01/29/Bandarban.jpg",
+      "type": "Mountain",
+      "location": "Bandarban, Chittagong",
+      "latitude": 21.8928,
+      "longitude": 92.2520
+    },
+    {
+      "name": "Chimbuk Hill",
+      "description": "Chimbuk Hill is known as the Darjeeling of Bangladesh for its elevation and views.",
+      "images": "https://d34vm3j4h7f97z.cloudfront.net/original/4X/9/6/b/96b3854601efb4b4b0dfce97a15e407e81e1e3bd.jpeg",
+      "type": "Mountain",
+      "location": "Bandarban, Chittagong",
+      "latitude": 21.8960,
+      "longitude": 92.2720
+    },
+    {
+      "name": "Alikadam",
+      "description": "Alikadam is a peaceful hill area in Bandarban known for its natural beauty.",
+      "images": "https://ak-d.tripcdn.com/images/0HJ5b12000ippdsps8407_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip",
+      "type": "Mountain",
+      "location": "Bandarban, Chittagong",
+      "latitude": 21.7887,
+      "longitude": 92.2204
+    },
+    {
+      "name": "Nilachal",
+      "description": "Nilachal is a scenic tourist spot offering a panoramic view of Bandarban town.",
+      "images": "https://upload.wikimedia.org/wikipedia/commons/6/61/Nilachal%2C_Bandarban_%282Q7A0635%29.jpg",
+      "type": "Mountain",
+      "location": "Bandarban, Chittagong",
+      "latitude": 21.8095,
+      "longitude": 92.2176
+    },
+    {
+      "name": "Mayung Kopal",
+      "description": "Mayung Kopal is a lesser-known but beautiful hilly destination in Khagrachari.",
+      "images": "https://huntingworldbeauty.com/wp-content/uploads/2024/12/Mayung_.jpeg.webp",
+      "type": "Mountain",
+      "location": "Khagrachari, Chittagong",
+      "latitude": 23.1050,
+      "longitude": 91.9880
+    },
+    {
+      "name": "Sundarbans Mangrove Forest",
+      "description": "The largest mangrove forest in the world and a UNESCO World Heritage site.",
+      "images": "https://cosmosgroup.sgp1.digitaloceanspaces.com/news/details/3384770_sundarbans-bangladesh_deer_fauna.jpg",
+      "type": "Forest",
+      "location": "Khulna",
+      "latitude": 21.9497,
+      "longitude": 89.1833
+    },
+    {
+      "name": "Ratargul Swamp Forest",
+      "description": "A freshwater swamp forest in Sylhet, popular for boat tours.",
+      "images": "https://www.travelmate.com.bd/wp-content/uploads/2019/07/Ratargul-2.jpg",
+      "type": "Forest",
+      "location": "Sylhet",
+      "latitude": 24.4981,
+      "longitude": 91.8425
+    },
+    {
+      "name": "Lawachara Rain Forest",
+      "description": "An evergreen rainforest and national park with rich biodiversity.",
+      "images": "https://i.pinimg.com/736x/27/a6/96/27a696b4a3e5eae274af2db0ea22ef5d.jpg",
+      "type": "Forest",
+      "location": "Moulvibazar",
+      "latitude": 24.7280,
+      "longitude": 91.7755
+    },
+    {
+      "name": "Rema-Kalenga Reserve Forest",
+      "description": "One of the largest and most diverse forests in Bangladesh.",
+      "images": "https://www.nextgobd.com/media/packageImage/IMG_0628-870x555.jpg",
+      "type": "Forest",
+      "location": "Habiganj",
+      "latitude": 24.3710,
+      "longitude": 91.4487
+    },
+    {
+      "name": "Bhawal National Park",
+      "description": "A popular forest park near Dhaka for picnics and nature walks.",
+      "images": "https://i0.wp.com/adarbepari.com/wp-content/uploads/2016/08/gazipur-bhawal-national-park.jpg?fit=820%2C430&ssl=1",
+      "type": "Forest",
+      "location": "Gazipur",
+      "latitude": 23.9873,
+      "longitude": 90.4200
+    },
+    {
+      "name": "Sitakunda Eco Park",
+      "description": "A nature park in Chittagong with waterfalls and hiking trails.",
+      "images": "https://www.cholozai.com/images/location/sitakunda-eco-park.webp",
+      "type": "Forest",
+      "location": "Chittagong",
+      "latitude": 22.6241,
+      "longitude": 91.8661
+    },
+    {
+      "name": "Modhutila Eco Park",
+      "description": "Eco-tourism spot with natural green hills and diverse wildlife.",
+      "images": "https://i0.wp.com/adarbepari.com/wp-content/uploads/2016/06/modhutila-eco-park-sherpur-03.jpg?fit=820%2C450&ssl=1",
+      "type": "Forest",
+      "location": "Sherpur",
+      "latitude": 25.0200,
+      "longitude": 90.0150
+    },
+    {
+      "name": "Dulahazra Safari Park",
+      "description": "A safari park with various animals and birds, popular with families.",
+      "images": "https://cdn.pixabay.com/photo/2018/02/06/21/34/zebra-3132762_1280.jpg",
+      "type": "Forest",
+      "location": "Cox's Bazar",
+      "latitude": 21.4122,
+      "longitude": 91.9633
+    },
+    {
+      "name": "Cox's Bazar Beach",
+      "description": "Cox's Bazar is the longest natural sea beach in the world.",
+      "images": "https://cdn.pixabay.com/photo/2018/04/23/20/56/beach-3341333_1280.jpg",
+      "type": "Beach",
+      "location": "Cox's Bazar, Chittagong",
+      "latitude": 21.4272,
+      "longitude": 92.0058
+    },
+
+      {
+        "name": "Inani Beach",
+        "description": "Inani Beach is famous for its coral stones and crystal clear water.",
+        "type": "Beach",
+        "location": "Cox's Bazar, Chittagong",
+        "latitude": 21.7045,
+        "longitude": 92.1713
+      },
+      {
+        "name": "Himchari Beach",
+        "description": "Known for its waterfall and hilly backdrop next to the sea.",
+        "type": "Beach",
+        "location": "Cox's Bazar, Chittagong",
+        "latitude": 21.6925,
+        "longitude": 92.1736
+      },
+      {
+        "name": "Saint Martin's Island",
+        "description": "The only coral island of Bangladesh located in the Bay of Bengal.",
+        "type": "Beach",
+        "location": "Cox's Bazar, Chittagong",
+        "latitude": 20.6191,
+        "longitude": 92.2983
+      },
+      {
+        "name": "Kuakata Beach",
+        "description": "Known as 'Daughter of the Sea', it's the only place to see both sunrise and sunset over the sea.",
+        "type": "Beach",
+        "location": "Patuakhali",
+        "latitude": 21.8016,
+        "longitude": 90.1166
+      },
+      {
+        "name": "Patenga Beach",
+        "description": "A popular beach close to Chittagong city.",
+        "type": "Beach",
+        "location": "Chittagong",
+        "latitude": 22.2922,
+        "longitude": 91.7832
+      },
+
+      {
+        "name": "Teknaf Beach",
+        "description": "Located at the southern tip of Bangladesh, it's a calm and uncrowded beach.",
+        "images": "https://cdn.pixabay.com/photo/2016/06/06/20/52/beach-1439567_1280.jpg",
+        "type": "Beach",
+        "location": "Cox's Bazar",
+        "latitude": 20.8583,
+        "longitude": 92.2969
+      },
+      {
+        "name": "Ramna Park",
+        "description": "A large park with trees and gardens in the heart of Dhaka.",
+        "images": "https://cdn.pixabay.com/photo/2016/11/29/04/17/bench-1867015_1280.jpg",
+        "type": "Park",
+        "location": "Dhaka",
+        "latitude": 23.7519,
+        "longitude": 90.3984
+      },
+      {
+        "name": "National Botanical Garden",
+        "description": "The largest plant conservation center in Bangladesh.",
+        "images": "https://cdn.pixabay.com/photo/2020/05/01/09/24/botanical-garden-5112382_1280.jpg",
+        "type": "Park",
+        "location": "Dhaka",
+        "latitude": 23.7611,
+        "longitude": 90.3905
+      },
+      {
+        "name": "Baldha Garden",
+        "description": "A historical botanical garden in Wari, Dhaka.",
+        "images": "https://cdn.pixabay.com/photo/2020/05/01/09/20/garden-5112377_1280.jpg",
+        "type": "Park",
+        "location": "Dhaka",
+        "latitude": 23.7362,
+        "longitude": 90.3988
+      },
+      {
+        "name": "Gazipur Safari Park",
+        "description": "A safari park near Dhaka with wildlife and nature views.",
+        "images": "https://cdn.pixabay.com/photo/2021/08/04/09/41/elephant-6520025_1280.jpg",
+        "type": "Park",
+        "location": "Gazipur",
+        "latitude": 24.1008,
+        "longitude": 90.4014
+      },
+      {
+        "name": "Nandan Park",
+        "description": "A popular amusement and water park in Savar.",
+        "images": "https://cdn.pixabay.com/photo/2018/07/08/19/04/water-3524110_1280.jpg",
+        "type": "Park",
+        "location": "Savar",
+        "latitude": 23.8680,
+        "longitude": 90.2929
+      },
+      {
+        "name": "Fantasy Kingdom",
+        "description": "One of the top amusement parks in Bangladesh with rides and entertainment.",
+        "images": "https://cdn.pixabay.com/photo/2016/10/25/13/29/roller-coaster-1761491_1280.jpg",
+        "type": "Park",
+        "location": "Ashulia",
+        "latitude": 23.8717,
+        "longitude": 90.2502
+      },
+      {
+        "name": "Shishu Park",
+        "description": "An old amusement park designed for children in Dhaka.",
+        "images": "https://cdn.pixabay.com/photo/2016/11/21/17/27/playground-1845066_1280.jpg",
+        "type": "Park",
+        "location": "Dhaka",
+        "latitude": 23.7523,
+        "longitude": 90.3839
+      },
+      {
+        "name": "Wonderland Park",
+        "description": "A family amusement park located in Chittagong.",
+        "images": "https://cdn.pixabay.com/photo/2015/04/20/13/25/amusement-park-731229_1280.jpg",
+        "type": "Park",
+        "location": "Chittagong",
+        "latitude": 22.3569,
+        "longitude": 91.7832
+      },
+      {
+        "name": "Bangladesh National Museum",
+        "description": "The largest museum in Bangladesh showcasing history, art and culture.",
+        "images": "https://cdn.pixabay.com/photo/2017/06/08/08/44/museum-2380853_1280.jpg",
+        "type": "Museum",
+        "location": "Dhaka",
+        "latitude": 23.7393,
+        "longitude": 90.3974
+      },
+    {
+      "name": "Science Museum",
+      "description": "National Science and Technology Museum showcasing innovation.",
+      "images": "https://cdn.pixabay.com/photo/2017/06/07/18/45/technology-2381205_1280.jpg",
+      "type": "Museum",
+      "location": "Dhaka",
+      "latitude": 23.7456,
+      "longitude": 90.3840
+    }
+
+  ]
+}

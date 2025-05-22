@@ -1,3 +1,4 @@
+import 'package:egov_bd/core/constant/size.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constant/app_colors.dart';
@@ -10,6 +11,8 @@ class CategoryList extends StatelessWidget {
     {'icon': Icons.park, 'label': 'Park'},
     {'icon': Icons.museum, 'label': 'Museum'},
   ];
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,7 @@ class CategoryList extends StatelessWidget {
                     color: AppColors.leadingTColor,
                   ),
                 ),
-                SizedBox(height: 8),
+                SizedBox(height: AppSizes.sizeBoxW),
                 Text(
                   category['label'],
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),

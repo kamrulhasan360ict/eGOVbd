@@ -1,5 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:egov_bd/core/constant/app_colors.dart';
 import 'package:egov_bd/core/constant/size.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
@@ -72,22 +70,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     height: AppSizes.lsizeBox16,
                   ),
-                  // Expanded(
-                  //   child: Container(
-                  //     padding: EdgeInsets.all(8),
-                  //     child: Row(
-                  //       crossAxisAlignment: CrossAxisAlignment.center,
-                  //       children: [
-                  //         Icon(Icons.help_outline, color: Colors.blue),
-                  //         SizedBox(width: 8),
-                  //         Text(
-                  //           'Need help',
-                  //           style: AppSizes.lbigBold(context),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ),
-                  // ),
 
                   CardWidgets(),
                 ],

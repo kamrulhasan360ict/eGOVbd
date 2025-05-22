@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../core/constant/app_colors.dart';
+import '../../../../core/constant/app_route/app_route.dart';
 import '../../../../core/constant/size.dart';
 import '../pages/history_screen.dart';
 
@@ -28,13 +29,15 @@ class NotificationList extends StatelessWidget {
               ),
               child: ListTile(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => HistoryScreen()));
+                  // Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //         builder: (context) => HistoryScreen()));
+
+                  AppRoutes.push(context, page: HistoryScreen());
                 },
                 leading: HugeIcon(
-                  icon: HugeIcons.strokeRoundedNotificationBlock02,
+                  icon: HugeIcons.strokeRoundedNotification02,
                   color: AppColors.textColor,
                   size: 24.0,
                 ),

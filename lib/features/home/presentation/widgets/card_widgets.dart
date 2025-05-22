@@ -22,35 +22,17 @@ class CardWidgets extends StatelessWidget {
         child: Row(
           children: [
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Need help?',
-                    style: AppSizes.lbigBold(context),
-                  ),
-                  SizedBox(height: AppSizes.sizeBox),
-                  Text(
-                    'We\'re here to help!',
-                    style: AppSizes.normalSize(context),
-                  ),
-                  SizedBox(height: AppSizes.lsizeBox16),
-                  Text(
-                    'Contact us →',
-                    style: AppSizes.xsmallLight(context),
-                  ),
-                ],
+              child: Image.asset(
+                'assets/images/contract.png',
+                height: 120,
+                fit: BoxFit.cover,
               ),
-            ),
-            // SizedBox(width: AppSizes.lsizeBox16),
-            Image.asset(
-              'assets/images/image.png',
-              width: 160,
-              fit: BoxFit.cover,
             ),
           ],
         ),
       ),
     );
+
+
   }
 }

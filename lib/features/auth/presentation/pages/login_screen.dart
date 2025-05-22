@@ -1,7 +1,6 @@
 import 'package:egov_bd/core/constant/app_colors.dart';
 import 'package:egov_bd/core/constant/app_name.dart';
 import 'package:egov_bd/core/constant/size.dart';
-import 'package:egov_bd/features/auth/presentation/pages/email_otp_screen.dart';
 import 'package:egov_bd/features/auth/presentation/pages/sign_up%20_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +15,9 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -29,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Text('Login to ', style: AppSizes.normalBolds(context)),
+                    Text('Login to '),
                     Text(
                       AppConstants.appName,
                       style: AppSizes.appName(context),
@@ -45,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                 ),
                 SizedBox(
-                  height: 290,
+                  height: MediaQuery.of(context).size.height *0.30
                 ),
                 // Spacer(),
                 ElevatedButton(
@@ -63,15 +65,15 @@ class LoginScreen extends StatelessWidget {
                               builder: (context) => MainBottomNavScreen()));
                     },
                     child:
-                        Text('Login', style: AppSizes.hadingTextBold(context))),
+                        Text('Login', style: AppSizes.normalTextBold(context))),
                 SizedBox(
-                  height: AppSizes.paddingInside,
+                  height: AppSizes.sizeBoxW,
                 ),
                 Row(
                   children: [
                     Expanded(
                       child: Divider(
-                        thickness: 1,
+                        thickness: 0.5,
                         color: Colors.grey,
                       ),
                     ),
@@ -82,7 +84,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Divider(
-                        thickness: 1,
+                        thickness: 0.5,
                         color: Colors.grey,
                       ),
                     ),
@@ -93,12 +95,12 @@ class LoginScreen extends StatelessWidget {
                 ),
                 Center(
                   child: Text(
-                    'Donot have eGOVbd account yet? ',
+                    'Don\'t have eGOVbd account yet? ',
                     style: TextStyle(fontSize: 16, color: Colors.grey),
                   ),
                 ),
                 SizedBox(
-                  height: AppSizes.fontSizeOverLarge,
+                  height: AppSizes.sizeBox,
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -119,12 +121,7 @@ class LoginScreen extends StatelessWidget {
 
                   },
                   child: Text(
-                    'Create new account',
-                    style: TextStyle(
-                      color: AppColors.leadingTColor,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
+                    'Create new account',style: AppSizes.normalTexButton(context),
                   ),
                 ),
               ],

@@ -1,11 +1,13 @@
+import 'package:egov_bd/core/constant/app_route/app_route.dart';
 import 'package:egov_bd/features/lgus/presentation/pages/lgus_screen.dart';
+import 'package:egov_bd/features/ngas/presentation/pages/ngas_screen.dart';
+import 'package:egov_bd/features/travel/presentation/pages/travel_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../core/constant/app_colors.dart';
 import '../../../../core/constant/size.dart';
 import '../../../jobs/presentation/pages/job_screen.dart';
-import '../../../ngas/presentation/pages/ngas_screen.dart';
 import '../../../tourism/presentation/pages/tourism_screen.dart';
 
 class CatagoriList extends StatelessWidget {
@@ -34,7 +36,7 @@ class CatagoriList extends StatelessWidget {
                 Widget targetScreen;
 
                 if (index == 0) {
-                  targetScreen = NgasScreen();
+                  targetScreen = NgaSScreen();
                 } else if (index == 1) {
                   targetScreen = LgusScreen();
                 } else if (index == 2) {
@@ -42,27 +44,23 @@ class CatagoriList extends StatelessWidget {
                 } else {
                   targetScreen = TourismScreen();
                 }
-
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => targetScreen),
-                );
+                AppRoutes.push(context, page: targetScreen);
               },
               child: Column(
                 children: [
                   CircleAvatar(
                     backgroundColor: AppColors.iconBkColor,
-                    radius: 28,
+                    radius: 30,
                     child: HugeIcon(
                       icon: icons[index],
-                      color: AppColors.leadingTColor,
-                      size: 40.0,
+                      color: AppColors.iConColor,
+                      size: 25.0,
                     ),
                   ),
-                  const SizedBox(height: 6),
+                  const SizedBox(height: AppSizes.sizeBox),
                   Text(
                     labels[index],
-                    style: AppSizes.normalSize(context),
+                    style: AppSizes.catagoriTextSize(context),
                   ),
                 ],
               ),
@@ -77,24 +75,34 @@ class CatagoriList extends StatelessWidget {
           children: List.generate(icons.length, (index) {
             return GestureDetector(
               onTap: () {
-                // print('Tapped on ${labels[index]}');
-                // You can also use Navigator.push(...) or any custom logic here
+                Widget targetScreen;
+
+                if (index == 0) {
+                  targetScreen = TravelScreen(name: 'Travel',);
+                } else if (index == 1) {
+                  targetScreen = LgusScreen();
+                } else if (index == 2) {
+                  targetScreen = JobScreen();
+                } else {
+                  targetScreen = TourismScreen();
+                }
+                AppRoutes.push(context, page: targetScreen);
               },
               child: Column(
                 children: [
                   CircleAvatar(
                     backgroundColor: AppColors.iconBkColor,
-                    radius: 28,
+                    radius: 30,
                     child: HugeIcon(
                       icon: secendicons[index],
                       color: AppColors.leadingTColor,
-                      size: 40.0,
+                      size: 25.0,
                     ),
                   ),
-                  const SizedBox(height: 6),
+                   SizedBox(height: AppSizes.sizeBox),
                   Text(
                     secendLabels[index],
-                    style: AppSizes.normalSize(context),
+                    style: AppSizes.catagoriTextSize(context),
                   ),
                 ],
               ),

@@ -12,7 +12,8 @@ class HistoryScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Center(child: Text('History')),
+        title:  Text('History'),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Padding(
@@ -77,14 +78,14 @@ class HistoryScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(AppSizes.sizeBox),
                         ),
                         child: ListTile(
-                          onTap: () {
-                            // print('Entire item tapped! Index: $index');
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>HistoryScreen()));
-
-
-                          },
+                          // onTap: () {
+                          //   // print('Entire item tapped! Index: $index');
+                          //   Navigator.push(context, MaterialPageRoute(builder: (context)=>HistoryScreen()));
+                          //
+                          //
+                          // },
                           leading: HugeIcon(
-                            icon: HugeIcons.strokeRoundedNotificationBlock02,
+                            icon: HugeIcons.strokeRoundedNotification02,
                             color: AppColors.textColor,
                             size: 24.0,
                           ),

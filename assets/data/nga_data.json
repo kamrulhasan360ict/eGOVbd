@@ -1,0 +1,55 @@
+{
+  "nga data":[
+    {
+      "agency_name": "Ministry of Health and Family Welfare",
+      "function": "Healthcare and family planning",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdlt9uGkxmKqo27qo2a872E8UJuizt8e0jA&s"
+    },
+    {
+      "agency_name": "Ministry of Education",
+      "function": "Education policy and activities",
+      "image": "https://ecdn.dhakatribune.net/contents/cache/images/1200x630x1xxxxx1x694528/uploads/media/2024/09/05/Education-Ministry-816ef13f609e9950697e2ce2a0505dd0.jpg?watermark=media%2F2023%2F05%2F28%2F1280px-Dhaka_Tribune_Logo.svg-1-a9e61c86dded62d74300fef48fee558f.png"
+    },
+    {
+      "agency_name": "Bangladesh Police",
+      "function": "Law and order enforcement",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bangladesh_Police_Insignia_Patch.svg/640px-Bangladesh_Police_Insignia_Patch.svg.png"
+    },
+    {
+      "agency_name": "Bangladesh Army / BGB / Navy / Air Force",
+      "function": "National defense",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%B8%E0%A6%B6%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0_%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A7%80%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%B8%E0%A6%B6%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0_%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A7%80%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg.png"
+    },
+    {
+      "agency_name": "Bangladesh Bureau of Statistics (BBS)",
+      "function": "Data collection and statistical analysis",
+      "image": "https://static.bonikbarta.com/original_images/bbs_Cso48Vo.jpg"
+    },
+    {
+      "agency_name": "Bangladesh Bank",
+      "function": "Central banking of the country",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg/800px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg.png"
+    },
+    {
+      "agency_name": "NBR (National Board of Revenue)",
+      "function": "Revenue and tax collection",
+      "image": "https://gpit.com.bd/uploads/website/NBR-2024-08-14-66bbb42bdbda7.png"
+    },
+    {
+      "agency_name": "LGED (Local Government Engineering Department)",
+      "function": "Local development projects",
+      "image": "https://esdo.net.bd/wp-content/uploads/2023/10/Local-Government-Engineering-Department-LGED-400x265.jpg"
+    },
+    {
+      "agency_name": "RAJUK",
+      "function": "Capital city development authority",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/27/Rajdhani_Unnayan_Kartripakkha_Logo.jpg"
+    },
+    {
+      "agency_name": "BTRC (Bangladesh Telecommunication Regulatory Commission)",
+      "function": "Telecommunication regulation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOr-DcIN9gkaBIXvr0J5nvDCXkpdYfz-npGCNQ1thjasiFajvMW7h3zqcOQGhJ2-LHzWk&usqp=CAU"
+    }
+  ]
+
+}

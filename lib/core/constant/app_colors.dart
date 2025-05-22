@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static const Color iConColor = Color(0xFF013DE8);
   static const Color seed = Color(0xFF02486b);
   static const Color borderColor = Color(0xffe4e5e9);
   static const Color cardBColor = Color(0xFFEBF2F8);

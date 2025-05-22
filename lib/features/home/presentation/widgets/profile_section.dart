@@ -1,3 +1,4 @@
+import 'package:egov_bd/core/constant/app_route/app_route.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -24,11 +25,11 @@ class ProfileSection extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>NotificationHistoryScreen()));
-
+                // Navigator.push(context, MaterialPageRoute(builder: (context)=>NotificationHistoryScreen()));
+AppRoutes.push(context, page: NotificationHistoryScreen());
               },
               icon: HugeIcon(
-                icon: HugeIcons.strokeRoundedNotificationBlock02,
+                icon: HugeIcons.strokeRoundedNotification02,
                 color: AppColors.leadingTColor,
                 size: 24.0, // optional: match your design
               ),
@@ -55,7 +56,7 @@ class ProfileSection extends StatelessWidget {
                   SizedBox(height: AppSizes.sizeBox),
                   SizedBox(
                     height: 30,
-                    width: 110,
+                    width: 130,
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(

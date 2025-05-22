@@ -4,7 +4,6 @@ import 'package:egov_bd/core/widgets/app_text_form_field.dart';
 import 'package:egov_bd/features/auth/presentation/pages/login_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/constant/app_colors.dart';
 import '../../../../core/widgets/check_box.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -104,10 +103,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       notifier: _noMiddleName,
                       label: '', // leave empty here because text is outside
                     ),
-                    const SizedBox(width: 8),
-                    const Text(
+                     SizedBox(width: AppSizes.sizeBox),
+                     Text(
                       'I have no middle name',
-                      style: TextStyle(fontSize: 16),
+                      style: AppSizes.hinTextColor(context)
                     ),
                   ],
                 ),
@@ -128,15 +127,36 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 SizedBox(
                   height: AppSizes.lsizeBox40,
                 ),
-                Wrap(
-                  children: [
-                    Text('By tapping '),
-                    Text('Create new account,', style: AppSizes.normalBolds(context)),
-                    Text(' you agree with the '),
-                    Text('Terms and Conditions', style: AppSizes.normalBolds(context)),
-                    Text(' and '),
-                    Text('Privacy Policy', style: AppSizes.normalBolds(context)),
-                  ],
+
+
+                RichText(
+                  textAlign: TextAlign.center,
+                  text: TextSpan(
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black54,
+                    ),
+                    children: [
+                      TextSpan(text: 'By tapping '),
+                      TextSpan(
+                        text: 'Create new account',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      TextSpan(text: ', you agree with the '),
+                      TextSpan(
+                        text: 'Terms and Conditions',
+                          style: AppSizes.normalTexButton(context)
+                      ),
+                      TextSpan(text: ' and '),
+                      TextSpan(
+                        text: 'Privacy Policy',
+                        style: AppSizes.normalTexButton(context)
+                      ),
+                    ],
+                  ),
                 ),
 
                 SizedBox(
@@ -146,12 +166,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ElevatedButton(
                     onPressed: () {},
                     child: Text('Create new account',
-                        style: AppSizes.hadingTextBold(context))),
+                        style: AppSizes.normalTextBold(context)
+                    )
+                ),
+                SizedBox(height: AppSizes.lsizeBox16,),
                 Row(
                   children: [
                     Expanded(
                       child: Divider(
-                        thickness: 1,
+                        thickness: 0.5,
                         color: Colors.grey,
                       ),
                     ),
@@ -162,14 +185,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     Expanded(
                       child: Divider(
-                        thickness: 1,
+                        thickness: 0.5,
                         color: Colors.grey,
                       ),
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: AppSizes.fontSizeOverLarge,
+                  height: AppSizes.lsizeBox16,
                 ),
                 Center(
                   child: Text(
@@ -178,7 +201,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: AppSizes.fontSizeOverLarge,
+                  height: AppSizes.sizeBox,
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -187,7 +210,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     // Text color
                     elevation: 2,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(AppSizes.normalPadding),
                       side: BorderSide(color: Colors.grey.shade300),
                     ),
                     padding:
@@ -199,11 +222,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   },
                   child: Text(
                     'Login here',
-                    style: TextStyle(
-                      color: AppColors.leadingTColor,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
+                    style: AppSizes.normalTexButton(context)
                   ),
                 ),
               ],

@@ -1,7 +1,11 @@
 import 'package:egov_bd/core/constant/app_colors.dart';
 import 'package:egov_bd/core/constant/app_images.dart';
 import 'package:egov_bd/core/constant/size.dart';
+import 'package:egov_bd/features/travel/presentation/pages/account_setting_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/constant/app_route/app_route.dart';
+import '../widgets/header_section.dart';
 
 class TravelProfileScreen extends StatefulWidget {
   const TravelProfileScreen({super.key, required this.name});
@@ -25,30 +29,7 @@ class _TravelProfileScreenState extends State<TravelProfileScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Row(
-              children: [
-                SizedBox(
-                  height: 50,
-                  width: 100,
-                  child: Image.asset(AppImages.eTravel),
-                ),
-                const Spacer(),
-                const Text('Hi,'),
-                SizedBox(width: AppSizes.sizeBox),
-                Text(
-                  'MD.ZAYED',
-                  style: AppSizes.bolds(context),
-                ),
-                SizedBox(width: AppSizes.sizeBox),
-                Image.asset(
-                  AppImages.bdLogo,
-                  width: 30,
-                  height: 30,
-                ),
-                SizedBox(width: AppSizes.sizeBox),
-                const Icon(Icons.menu),
-              ],
-            ),
+            HeaderSection(),
             SizedBox(
               height: AppSizes.lsizeBox16,
             ),
@@ -58,41 +39,94 @@ class _TravelProfileScreenState extends State<TravelProfileScreen> {
                   children: [
                     Image.asset(
                       AppImages.bdLogo,
+                      height: 460,
+                      // width: double.infinity,
                     ),
                     Positioned(
-                      top: 100,left: 0,right: 0  ,
-                        child: Padding(
-                          padding:  EdgeInsets.all(AppSizes.normalPadding),
-                          child: Column(
-                                                children: [
-                          Column(
-                            children: [
-                              CircleAvatar(
+                      top: 100,
+                      left: 0,
+                      right: 0,
+                      child: Padding(
+                        padding: EdgeInsets.all(AppSizes.normalPadding),
+                        child: Column(
+                          children: [
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  child: Image.asset(
+                                    AppImages.profile,
+                                  ),
+                                  radius: 20,
+                                ),
+                                SizedBox(
+                                  height: AppSizes.sizeBox,
+                                ),
+                                Text(
+                                  'MD.ZAYED',
+                                  style: AppSizes.bolds(context),
+                                ),
+                                SizedBox(
+                                  height: AppSizes.sizeBox,
+                                ),
+                                Text('Passport Number\nA0145975'),
+                                SizedBox(
+                                  height: AppSizes.sizeBoxW,
+                                ),
+                                ElevatedButton(
+                                    onPressed: () {
+                                      AppRoutes.push(context, page: AccountSettingScreen(name: 'Travel',));
+                                    },
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'New Travel Declaration',
+                                          style:
+                                              AppSizes.normalTextBold(context),
+                                        ),
+                                        SizedBox(
+                                          width: AppSizes.sizeBox,
+                                        ),
+                                        Icon(
+                                          Icons.arrow_circle_right,
+                                          color: AppColors.backgroundColor,
+                                        )
+                                      ],
+                                    ),
+                                ),
+                                SizedBox(height: AppSizes.sizeBoxW,),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: Colors.grey.shade200,
+                                    elevation: 0,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(AppSizes.normalPadding),
+                                    ),
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: AppSizes.paddingBody,
+                                    ),
+                                  ),
+                                  onPressed: () {
 
-                                child: Image.asset(AppImages.profile,),
-                                radius: 20,
-                              ),
-                              SizedBox(height: AppSizes.sizeBox,),
-                              Text('MD.KAMRUL',style: AppSizes.bolds(context),),
-                              SizedBox(height: AppSizes.sizeBox,),
-                              Text('Passport Number\nA0145975'),
-                              SizedBox(height: AppSizes.sizeBoxW,),
-                              ElevatedButton(onPressed: (){}, child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text('New Travel Declaration',style: AppSizes.normalTextBold(context),),
-                                  SizedBox(width: AppSizes.sizeBox,),
-                                  Icon(Icons.arrow_circle_right,color: AppColors.backgroundColor,)
-                                ],
-                              )),
-
-
-
-                            ],
-                          )
-                                                ],
-                                              ),
+                                  },
+                                  child: Text(
+                                    'Add Family Member',
+                                    style: AppSizes.normalTexButton(context),
+                                  ),
+                                ),
+                                SizedBox(height: AppSizes.sizeBoxW,),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Text('Travel History',style: AppSizes.bolds(context),),
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
                         ),
+                      ),
                     )
                   ],
                 )
@@ -104,3 +138,4 @@ class _TravelProfileScreenState extends State<TravelProfileScreen> {
     );
   }
 }
+

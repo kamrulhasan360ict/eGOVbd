@@ -14,6 +14,7 @@ class AppColors {
   static const Color textColor = Color(0xff000000);
   static const Color leadingTColor=Color(0xff0041E7);
   static const Color backgroundColor =Colors.white;
+  static const Color TRedColor =Colors.red;
 // static const Color black = Color(0xFF000000);
 // static const Color buttonColor=
 

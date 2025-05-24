@@ -73,7 +73,7 @@ class _TravelProfileScreenState extends State<TravelProfileScreen> {
                                 radius: 20,
                               ),
                               SizedBox(height: AppSizes.sizeBox,),
-                              Text('MD.ZAYED',style: AppSizes.bolds(context),),
+                              Text('MD.KAMRUL',style: AppSizes.bolds(context),),
                               SizedBox(height: AppSizes.sizeBox,),
                               Text('Passport Number\nA0145975'),
                               SizedBox(height: AppSizes.sizeBoxW,),

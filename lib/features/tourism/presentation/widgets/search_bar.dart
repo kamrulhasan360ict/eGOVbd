@@ -42,7 +42,7 @@ class TourismSearchBar extends StatelessWidget {
           height: 36,
           margin: EdgeInsets.all(6),
           decoration: BoxDecoration(
-              color: AppColors.leadingTColor,
+              color: AppColors.seed,
               shape: BoxShape.circle
           ),
           child: IconButton(

@@ -16,7 +16,7 @@ class AppTheme {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
-          backgroundColor: WidgetStateProperty.all(AppColors.leadingTColor),
+          backgroundColor: WidgetStateProperty.all(AppColors.seed),
           elevation: WidgetStateProperty.all(0),
           shape: WidgetStateProperty.all(
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),

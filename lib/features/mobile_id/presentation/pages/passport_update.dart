@@ -19,7 +19,7 @@ class _PassportUpdateState extends State<PassportUpdate> {
         backgroundColor: Colors.white,
       ),
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(AppSizes.paddingBody),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,16 +28,14 @@ class _PassportUpdateState extends State<PassportUpdate> {
                 'Update your Passport ID?',
                 style: AppSizes.lbigBold(context),
               ),
-              SizedBox(
-                height: AppSizes.sizeBoxW,
-              ),
+              SizedBox(height: AppSizes.sizeBoxW),
               Row(
                 children: [
                   Container(
                     width: 20,
                     height: 20,
                     decoration: BoxDecoration(
-                      color: AppColors.leadingTColor,
+                      color: AppColors.seed,
                       shape: BoxShape.circle,
                     ),
                     child: Center(
@@ -50,7 +48,6 @@ class _PassportUpdateState extends State<PassportUpdate> {
                   ),
                   SizedBox(width: AppSizes.sizeBox),
                   Expanded(
-                    // <-- solves overflow issue
                     child: Text(
                       'By updating your passport details, you can activate the OFW Pass and eGatQR feature',
                       style: AppSizes.smallText(context),
@@ -58,49 +55,37 @@ class _PassportUpdateState extends State<PassportUpdate> {
                   ),
                 ],
               ),
-              Spacer(),
+              SizedBox(height: AppSizes.sizeBoxW * 2),
               Image.asset(AppImages.passportScan),
-              Spacer(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Make sure your Passport is valid and not expired',
-                    style: AppSizes.smallText(context),
-                  )
-                ],
+              SizedBox(height: AppSizes.sizeBoxW * 2),
+              Center(
+                child: Text(
+                  'Make sure your Passport is valid and not expired',
+                  style: AppSizes.accountText(context),
+                ),
               ),
-              SizedBox(
-                height: AppSizes.sizeBoxW,
-              ),
+              SizedBox(height: AppSizes.sizeBoxW),
               ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Capture your Passport',
-                    style: AppSizes.normalTextBold(context),
-                  )),
-              SizedBox(
-                height: AppSizes.sizeBox,
+                onPressed: () {},
+                child: Text(
+                  'Capture your Passport',
+                  style: AppSizes.normalTextBold(context),
+                ),
               ),
+              SizedBox(height: AppSizes.sizeBox),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.grey.shade200,
-
-                  // Text color
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(AppSizes.normalPadding),
-
                   ),
-                  padding:
-                  EdgeInsets.symmetric(vertical: AppSizes.paddingBody),
+                  padding: EdgeInsets.symmetric(vertical: AppSizes.paddingBody),
                 ),
-                onPressed: () {
-
-                },
+                onPressed: () {},
                 child: Text(
-                    'Skip for now',
-                    style: AppSizes.normalTexButton(context)
+                  'Skip for now',
+                  style: AppSizes.normalTexButton(context),
                 ),
               ),
             ],
@@ -109,4 +94,5 @@ class _PassportUpdateState extends State<PassportUpdate> {
       ),
     );
   }
+
 }

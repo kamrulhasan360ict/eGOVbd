@@ -1,0 +1,54 @@
+{
+  "bd_news_channels": [
+    {
+      "name": "Somoy TV",
+      "website": "https://www.somoynews.tv",
+      "image": "https://seeklogo.com/images/S/somoy-tv-logo-536972.png"
+    },
+    {
+      "name": "Jamuna TV",
+      "website": "https://www.jamuna.tv",
+      "image": "https://seeklogo.com/images/J/jamuna-tv-logo-375970.png"
+    },
+    {
+      "name": "Channel 24",
+      "website": "https://www.channel24bd.tv",
+      "image": "https://seeklogo.com/images/C/channel-24-logo-424910.png"
+    },
+    {
+      "name": "Ekattor TV",
+      "website": "http://www.ekattor.tv",
+      "image": "https://www.cleanpng.com/png-bangladesh-ekattor-tv-television-channel-atn-news-2084235/"
+    },
+    {
+      "name": "Independent TV",
+      "website": "https://www.itvbd.com",
+      "image": "https://www.cleanpng.com/png-logo-bangladesh-independent-television-television-6034187/"
+    },
+    {
+      "name": "News24",
+      "website": "https://www.news24bd.tv",
+      "image": "https://seeklogo.com/images/N/news24-channel-logo-362149.png"
+    },
+    {
+      "name": "DBC News",
+      "website": "https://dbcnews.tv",
+      "image": "https://commons.wikimedia.org/wiki/File:DBC_News_logo.png"
+    },
+    {
+      "name": "ATN News",
+      "website": "https://www.atnnewstv.com",
+      "image": "https://seeklogo.com/images/A/atn-news-logo-375970.png"
+    },
+    {
+      "name": "NTV",
+      "website": "https://www.ntvbd.com",
+      "image": "https://seeklogo.com/images/N/ntv-channel-logo-396286.png"
+    },
+    {
+      "name": "RTV",
+      "website": "https://www.rtvonline.com",
+      "image": "https://seeklogo.com/images/R/r-tv-logo-237300.png"
+    }
+  ]
+}

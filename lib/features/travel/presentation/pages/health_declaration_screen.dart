@@ -6,6 +6,7 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../../core/constant/app_colors.dart';
 import '../../../../core/constant/app_route/app_route.dart';
 import '../../../../core/constant/size.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 import '../widgets/custom_radio_button.dart';
 
 class HealthDeclarationScreen extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HealthDeclarationScreenState extends State<HealthDeclarationScreen> {
         title: Text('Travel'),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: (){ AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))
         ],
       ),
       body: SafeArea(
@@ -36,7 +37,7 @@ class _HealthDeclarationScreenState extends State<HealthDeclarationScreen> {
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(AppSizes.normalPadding),
-                color: AppColors.leadingTColor,
+                color: AppColors.seed,
                 child: Text(
                   'Bangladesh Travel Information System',
                   style: AppSizes.stackText(context),
@@ -116,7 +117,7 @@ class _HealthDeclarationScreenState extends State<HealthDeclarationScreen> {
                       height: 60,
                       width: 70,
                       decoration: BoxDecoration(
-                          color: AppColors.leadingTColor,
+                          color: AppColors.seed,
                           border: Border.all(),
                           borderRadius: BorderRadius.circular(
                               AppSizes.normalPadding) // optional border

@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constant/app_colors.dart';
 import '../../../../core/constant/app_route/app_route.dart';
 import '../../../../core/constant/size.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 import '../widgets/custom_radio_button.dart';
 import '../widgets/customs_header_section.dart';
 
@@ -26,7 +27,7 @@ class _OtherTravelDetailsScreenState extends State<OtherTravelDetailsScreen> {
         title: Text('Travel'),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: (){ AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))
         ],
       ),
       body: SafeArea(
@@ -37,7 +38,7 @@ class _OtherTravelDetailsScreenState extends State<OtherTravelDetailsScreen> {
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(AppSizes.normalPadding),
-                color: AppColors.leadingTColor,
+                color: AppColors.seed,
                 child: Text(
                   'Bangladesh Travel Information System',
                   style: AppSizes.stackText(context),

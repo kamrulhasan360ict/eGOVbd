@@ -84,7 +84,7 @@ class CatagoriList extends StatelessWidget {
                 } else if (index == 2) {
                   targetScreen = JobScreen();
                 } else {
-                  targetScreen = TourismScreen();
+                  targetScreen = JobScreen();
                 }
                 AppRoutes.push(context, page: targetScreen);
               },
@@ -95,7 +95,7 @@ class CatagoriList extends StatelessWidget {
                     radius: 30,
                     child: HugeIcon(
                       icon: secendicons[index],
-                      color: AppColors.leadingTColor,
+                      color: AppColors.seed,
                       size: 25.0,
                     ),
                   ),

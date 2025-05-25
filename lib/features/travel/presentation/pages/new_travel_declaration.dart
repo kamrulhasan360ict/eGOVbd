@@ -162,6 +162,7 @@ import 'package:egov_bd/core/constant/app_colors.dart';
 import 'package:egov_bd/core/constant/app_text.dart';
 import 'package:egov_bd/core/constant/size.dart';
 import 'package:egov_bd/features/travel/presentation/widgets/header_section.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 import '../widgets/country_origin_dropdown.dart';
 import '../widgets/flight_information_dropdown.dart';
 import '../widgets/travel_type_dropdown.dart';
@@ -192,7 +193,7 @@ class _NewTravelDeclarationState extends State<NewTravelDeclaration> {
         title: Text('Travel'),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: (){ AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))
         ],
       ),
       body: SafeArea(
@@ -206,7 +207,7 @@ class _NewTravelDeclarationState extends State<NewTravelDeclaration> {
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(AppSizes.normalPadding),
-                color: AppColors.leadingTColor,
+                color: AppColors.seed,
                 child: Text(
                   'Bangladesh Travel Information System',
                   style: AppSizes.stackText(context),

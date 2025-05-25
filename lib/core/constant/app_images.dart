@@ -6,4 +6,5 @@ class AppImages {
   static const String bdLogo = 'assets/images/coin.png';
   static const String profile = 'assets/images/profile_pic.jpg';
   static const String customImage = 'assets/images/custom Image.png';
+  static const String history = 'assets/images/history.png';
 }

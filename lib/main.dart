@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'eGov bd',
       theme: AppTheme.lightTheme,
+      // home: PersonalTravleInformationSummary(),
       home: LoginScreen(),
     );
   }

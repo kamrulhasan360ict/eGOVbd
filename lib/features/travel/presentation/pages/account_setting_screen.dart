@@ -6,6 +6,7 @@ import 'package:egov_bd/features/travel/presentation/widgets/header_section.dart
 import 'package:flutter/material.dart';
 
 import '../../../../core/constant/app_route/app_route.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 import '../widgets/personal_information.dart';
 
 class AccountSettingScreen extends StatefulWidget {
@@ -25,7 +26,7 @@ class _AccountSettingScreenState extends State<AccountSettingScreen> {
         backgroundColor: AppColors.backgroundColor,
         title: Text(widget.name),
         centerTitle: true,
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.home))],
+        actions: [IconButton(onPressed: () { AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))],
       ),
       body: SafeArea(
         child: Padding(
@@ -65,7 +66,7 @@ class _AccountSettingScreenState extends State<AccountSettingScreen> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.edit,
-                          color: AppColors.leadingTColor,
+                          color: AppColors.seed,
                         ))
                   ],
                 ),
@@ -87,7 +88,7 @@ class _AccountSettingScreenState extends State<AccountSettingScreen> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.edit,
-                          color: AppColors.leadingTColor,
+                          color: AppColors.seed,
                         ))
                   ],
                 ),

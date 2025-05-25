@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constant/app_colors.dart';
 import '../../../../core/constant/app_route/app_route.dart';
 import '../../../../core/constant/size.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 import '../widgets/customs_header_section.dart';
 
 class SignatureScreen extends StatefulWidget {
@@ -23,132 +24,134 @@ class _SignatureScreenState extends State<SignatureScreen> {
         title: Text('Travel'),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: (){ AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))
         ],
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            HeaderSection(),
-            Container(
-              width: double.infinity,
-              padding: EdgeInsets.all(AppSizes.normalPadding),
-              color: AppColors.leadingTColor,
-              child: Text(
-                'Bangladesh Travel Information System',
-                style: AppSizes.stackText(context),
-                textAlign: TextAlign.center,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              HeaderSection(),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(AppSizes.normalPadding),
+                color: AppColors.seed,
+                child: Text(
+                  'Bangladesh Travel Information System',
+                  style: AppSizes.stackText(context),
+                  textAlign: TextAlign.center,
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(AppSizes.paddingBody),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  CustomsHeaderSection(),
-                  Center(
-                    child: Text(
-                      'Customs Declaration attachment and signature',
-                      style: AppSizes.accountText(context),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  SizedBox(
-                    height: AppSizes.sizeBoxW,
-                  ),
-                  Text(
-                    'For Custom-Declaration Signature',
-                    style: AppSizes.lbigBold(context),
-                  ),
-                  SizedBox(
-                    height: AppSizes.sizeBoxW,
-                  ),
-                  Text('Signature'),
-                  SizedBox(
-                    height: AppSizes.sizeBox,
-                  ),
-                  Container(
-                    height: 200,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.circular(AppSizes.normalPadding),
-                      border: Border.all(),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(AppSizes.normalPadding),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              TextButton(
-                                onPressed: () {},
-                                style: TextButton.styleFrom(
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 16, vertical: 8),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(
-                                          AppSizes.normalPadding),
-                                    ),
-                                    backgroundColor: AppColors.gray),
-                                child: Text(
-                                  'Clear',
-                                  style: AppSizes.locationName(context),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
+              Padding(
+                padding: const EdgeInsets.all(AppSizes.paddingBody),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CustomsHeaderSection(),
+                    Center(
+                      child: Text(
+                        'Customs Declaration attachment and signature',
+                        style: AppSizes.accountText(context),
+                        textAlign: TextAlign.center,
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: AppSizes.sizeBoxW,
-                  ),
-                  Text(
-                      'By Clicking "Next", you hereby certify under pain of falsification that this declaration is true and correct to the best of my Knowledge'),
+                    SizedBox(
+                      height: AppSizes.sizeBoxW,
+                    ),
+                    Text(
+                      'For Custom-Declaration Signature',
+                      style: AppSizes.lbigBold(context),
+                    ),
+                    SizedBox(
+                      height: AppSizes.sizeBoxW,
+                    ),
+                    Text('Signature'),
+                    SizedBox(
+                      height: AppSizes.sizeBox,
+                    ),
+                    Container(
+                      height: 200,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.circular(AppSizes.normalPadding),
+                        border: Border.all(),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(AppSizes.normalPadding),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                      padding: EdgeInsets.symmetric(
+                                          horizontal: 16, vertical: 8),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(
+                                            AppSizes.normalPadding),
+                                      ),
+                                      backgroundColor: AppColors.gray),
+                                  child: Text(
+                                    'Clear',
+                                    style: AppSizes.locationName(context),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppSizes.sizeBoxW,
+                    ),
+                    Text(
+                        'By Clicking "Next", you hereby certify under pain of falsification that this declaration is true and correct to the best of my Knowledge'),
 
 
 
-                  SizedBox(
-                    height: AppSizes.sizeBoxW,
-                  ),
-                  ElevatedButton(
+                    SizedBox(
+                      height: AppSizes.sizeBoxW,
+                    ),
+                    ElevatedButton(
+                        onPressed: () {
+                          AppRoutes.push(context, page: PersonalInformationSummary());
+                        },
+                        child: Text(
+                          'Next',
+                          style: AppSizes.normalTextBold(context),
+                        )),
+                    SizedBox(
+                      height: AppSizes.sizeBox,
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.grey.shade200,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius:
+                          BorderRadius.circular(AppSizes.normalPadding),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          vertical: AppSizes.paddingBody,
+                        ),
+                      ),
                       onPressed: () {
-                        AppRoutes.push(context, page: PersonalInformationSummary());
+                        AppRoutes.pop(context);
                       },
                       child: Text(
-                        'Next',
-                        style: AppSizes.normalTextBold(context),
-                      )),
-                  SizedBox(
-                    height: AppSizes.sizeBox,
-                  ),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey.shade200,
-                      elevation: 0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius:
-                        BorderRadius.circular(AppSizes.normalPadding),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                        vertical: AppSizes.paddingBody,
+                        'Previous',
+                        style: AppSizes.normalTexButton(context),
                       ),
                     ),
-                    onPressed: () {
-                      AppRoutes.pop(context);
-                    },
-                    child: Text(
-                      'Previous',
-                      style: AppSizes.normalTexButton(context),
-                    ),
-                  ),
-                ],
-              ),
-            )
-          ],
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

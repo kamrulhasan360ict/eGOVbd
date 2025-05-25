@@ -34,7 +34,7 @@ class CategoryList extends StatelessWidget {
                   child: Icon(
                     category['icon'],
                     size: 30,
-                    color: AppColors.leadingTColor,
+                    color: AppColors.seed,
                   ),
                 ),
                 SizedBox(height: AppSizes.sizeBoxW),

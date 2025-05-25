@@ -23,6 +23,7 @@ class AppSizes{
   static const double fontSize2 = 2;
   static const double fontSizeExtraSmall = 10;
   static const double fontSizeSmall = 12;
+  static const double fontSizeSmall13 = 13;
   static const double fontSizeDefault = 14;
   static const double fontSizeLarge = 16;
   static const double fontSizeExtraLarge = 18;
@@ -33,27 +34,29 @@ class AppSizes{
   static TextStyle redTexBold(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 18,color: AppColors.TRedColor); // 20,  500
 
   static TextStyle accountText(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey); // 14,  700
+  static TextStyle arrivalTex(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w200,fontSize: 13,); // 14,  700
 
   static TextStyle catagoriTextSize(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w400,fontSize: 12,color: Colors.grey.shade800); // 14,  700
   static TextStyle locationName(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w800,fontSize: 12,color: Colors.black); // 14,  700
 
-  static TextStyle normalTexButton(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w400, fontSize: 14,color: AppColors.leadingTColor); // 20,  500
+  static TextStyle normalTexButton(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w400, fontSize: 14,color: AppColors.seed); // 20,  500
 
   static TextStyle smallText(context) => Theme.of(context).textTheme.labelSmall!.copyWith(fontWeight: FontWeight.w400, fontSize: 14,color: Colors.grey.shade600); // 10,  400
   static TextStyle hinTextColor(context) => Theme.of(context).textTheme.labelSmall!.copyWith(fontWeight: FontWeight.w400, fontSize: 14,color: Colors.grey); // 10,  400
 
-  static TextStyle appName(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 26,color: AppColors.leadingTColor); // 20,  500
+  static TextStyle appName(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 26,color: AppColors.seed); // 20,  500
   static TextStyle lbigBold(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 20); // 20,  500
 
   static TextStyle normalSize(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w600,fontSize: 14,color: AppColors.gray); // 14,  700
   static TextStyle normalTextBold(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w400, fontSize: 14,color: AppColors.backgroundColor); // 20,  500
 
   static TextStyle normalBold(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w400,fontSize: 20); // 14,  700
-  static TextStyle vbigBold(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 20,color: AppColors.leadingTColor); // 20,  500
-  static TextStyle normalBoldLeading(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w800,fontSize: 16,color: AppColors.leadingTColor); // 14,  700
+  static TextStyle vbigBold(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 20,color: AppColors.seed); // 20,  500
+  static TextStyle normalBoldLeading(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w800,fontSize: 16,color: AppColors.seed); // 14,  700
   static TextStyle xsmallLight(context) => Theme.of(context).textTheme.labelSmall!.copyWith(fontWeight: FontWeight.w600, fontSize: 14); // 10,  400
-  static TextStyle normalBolds(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w600,fontSize: 16,color: AppColors.leadingTColor); // 14,  700
+  static TextStyle normalBolds(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w600,fontSize: 16,color: AppColors.seed); // 14,  700
   static TextStyle bolds(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w600,fontSize: 16,); // 14,  700
+  static TextStyle lavelText(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w400,fontSize: 16,color: Colors.grey); // 14,  700
   static TextStyle stackText(context) => Theme.of(context).textTheme.titleSmall!.copyWith(fontWeight: FontWeight.w600,fontSize: 16,color: Colors.white); // 14,  700
   static TextStyle hadingTextBold(context) => Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w800, fontSize: 20,color: AppColors.backgroundColor); // 20,  500
 }

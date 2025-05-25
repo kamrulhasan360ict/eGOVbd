@@ -106,19 +106,33 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../features/mobile_id/presentation/pages/passport_information.dart';
+import '../../features/mobile_id/presentation/pages/passport_update.dart';
 
-class MainBottomNavScreen extends StatelessWidget {
-  MainBottomNavScreen({super.key});
+class MainBottomNavScreen extends StatefulWidget {
+  const MainBottomNavScreen({super.key});
 
+  @override
+  State<MainBottomNavScreen> createState() => _MainBottomNavScreenState();
+}
+
+class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
   final ValueNotifier<int> currentIndex = ValueNotifier<int>(0);
 
   final List<Widget?> screens = const [
     HomeScreen(),
     Center(child: Text("🛒 News")),
-    null,
+
+    PassportInformation(),
+
     Center(child: Text("❤️ Scan QR")),
     Center(child: Text("📂 Account")),
   ];
+
+  @override
+  void dispose() {
+    currentIndex.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -136,10 +150,10 @@ class MainBottomNavScreen extends StatelessWidget {
             data: NavigationBarThemeData(
               indicatorColor: Colors.blue.shade100,
               labelTextStyle: WidgetStateProperty.resolveWith<TextStyle>(
-                (states) {
+                    (states) {
                   if (states.contains(WidgetState.selected)) {
                     return TextStyle(
-                      color: AppColors.leadingTColor,
+                      color: AppColors.seed,
                       fontWeight: FontWeight.bold,
                     );
                   }
@@ -147,9 +161,9 @@ class MainBottomNavScreen extends StatelessWidget {
                 },
               ),
               iconTheme: WidgetStateProperty.resolveWith<IconThemeData>(
-                (states) {
+                    (states) {
                   if (states.contains(WidgetState.selected)) {
-                    return IconThemeData(color: AppColors.leadingTColor);
+                    return IconThemeData(color: AppColors.seed);
                   }
                   return const IconThemeData(color: Colors.grey);
                 },
@@ -158,94 +172,21 @@ class MainBottomNavScreen extends StatelessWidget {
             child: NavigationBar(
               selectedIndex: index,
               onDestinationSelected: (selected) {
-                if (selected == 2) {
-                  showDialog(
-                      context: context,
-                      builder: (context) => AlertDialog(
-                            backgroundColor: Colors.white,
-                            contentPadding: const EdgeInsets.all(20),
-                            insetPadding:
-                                const EdgeInsets.symmetric(horizontal: 20),
-                            content: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-
-                                // Header Row
-                                Row(
-                               mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Container(
-                                      width: 44,
-                                      height: 44,
-                                      decoration: BoxDecoration(
-                                        color: AppColors.leadingTColor,
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Center(
-                                        child: HugeIcon(
-                                          icon: HugeIcons
-                                              .strokeRoundedInformationCircle,
-                                          color: Colors.white,
-                                          size: 24,
-                                        ),
-                                      ),
-                                    ),
-                                    // Container(
-                                    //     width: 66,
-                                    //     height: 44,
-                                    //     decoration: BoxDecoration(
-                                    //       shape: BoxShape.circle,
-                                    //     ),
-                                    //     child: ElevatedButton(
-                                    //         onPressed: () {},
-                                    //         child: Text('Close'))),
-                                  ],
-                                ),
-
-                                const SizedBox(height: 16),
-
-                                // Title Text
-                                Text(
-                                  "Passport Information",
-                                  style: AppSizes.bolds(context),
-                                  textAlign: TextAlign.center,
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  "Is your passport up to date?",
-                                  style: AppSizes.catagoriTextSize(context),
-                                  textAlign: TextAlign.center,
-                                ),
-
-                                const SizedBox(height: 16),
-
-                                // Passport Form
-                                SizedBox(
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.9,
-                                  child: PassportInformation(),
-                                ),
-                              ],
-                            ),
-                          ));
-                } else {
-                  currentIndex.value = selected;
-                }
+                currentIndex.value = selected;
               },
-              destinations: [
-                const NavigationDestination(
+              destinations: const [
+                NavigationDestination(
                   icon: Icon(Icons.home),
                   label: 'Home',
                 ),
                 NavigationDestination(
                   icon: HugeIcon(
-                    icon: HugeIcons.strokeRoundedNews,
-                    color: Colors.grey,
-                    size: 30.0,
-                  ),
+                      icon: HugeIcons.strokeRoundedNews,
+                      color: Colors.grey,
+                      size: 30.0),
                   label: 'News',
                 ),
-                const NavigationDestination(
+                NavigationDestination(
                   icon: HugeIcon(
                       icon: HugeIcons.strokeRoundedStudentCard,
                       color: Colors.grey),
@@ -257,7 +198,7 @@ class MainBottomNavScreen extends StatelessWidget {
                       color: Colors.grey),
                   label: 'Scan QR',
                 ),
-                const NavigationDestination(
+                NavigationDestination(
                   icon: HugeIcon(
                       icon: HugeIcons.strokeRoundedDashboardSquare01,
                       color: Colors.grey),
@@ -271,3 +212,4 @@ class MainBottomNavScreen extends StatelessWidget {
     );
   }
 }
+

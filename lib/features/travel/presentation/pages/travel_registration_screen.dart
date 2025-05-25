@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../core/constant/app_colors.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 
 class TravelRegistrationScreen extends StatefulWidget {
   const TravelRegistrationScreen({super.key});
@@ -28,6 +29,9 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
         backgroundColor: AppColors.backgroundColor,
         title: Text('Travel'),
         centerTitle: true,
+        actions: [
+          IconButton(onPressed: (){ AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))
+        ],
       ),
       body: SafeArea(
           child: Padding(
@@ -58,7 +62,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
                         children: [
                           Icon(HugeIcons.strokeRoundedAlert02,
                               size: 32,
-                              color: AppColors.leadingTColor // optional styling
+                              color: AppColors.seed // optional styling
                               ),
                         ],
                       ),
@@ -108,7 +112,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
 
                         height: 60,
                         decoration: BoxDecoration(
-                          color: selectedOptions == 'for me' ? AppColors.leadingTColor :AppColors.backgroundColor,
+                          color: selectedOptions == 'for me' ? AppColors.seed :AppColors.backgroundColor,
                           border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(10),
@@ -146,7 +150,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
                       child: Container(
                         height: 60,
                         decoration: BoxDecoration(
-                          color: selectedOptions == 'other' ? AppColors.leadingTColor :AppColors.backgroundColor,
+                          color: selectedOptions == 'other' ? AppColors.seed :AppColors.backgroundColor,
                           border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(AppSizes.normalPadding),
@@ -192,7 +196,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
                       child: Container(
                         height: 60,
                         decoration: BoxDecoration(
-                          color: selectedOption == 'air' ? AppColors.leadingTColor :AppColors.backgroundColor,
+                          color: selectedOption == 'air' ? AppColors.seed :AppColors.backgroundColor,
                           border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(AppSizes.normalPadding),
@@ -221,7 +225,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
                       child: Container(
                         height: 60,
                         decoration: BoxDecoration(
-                          color: selectedOption == 'sea' ? AppColors.leadingTColor :AppColors.backgroundColor,
+                          color: selectedOption == 'sea' ? AppColors.seed :AppColors.backgroundColor,
                           border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(AppSizes.normalPadding),
@@ -247,6 +251,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
               ),
               // TravelForm(),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
                     child: Container(
@@ -276,7 +281,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
                             children: [
                               Text(
                                 'ARRIVAL\nEntering the Bangladesh',
-                                style: TextStyle(fontSize: 14),
+                                style: TextStyle(fontSize: 13),
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               ),
@@ -317,7 +322,7 @@ class _TravelRegistrationScreenState extends State<TravelRegistrationScreen> {
                             children: [
                               Text(
                                 'DEPARTURE \nLeaving the Bangladesh',
-                                style: TextStyle(fontSize: 14),
+                                style: TextStyle(fontSize: 13),
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               ),

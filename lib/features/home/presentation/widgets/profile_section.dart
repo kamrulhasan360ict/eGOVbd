@@ -30,7 +30,7 @@ AppRoutes.push(context, page: NotificationHistoryScreen());
               },
               icon: HugeIcon(
                 icon: HugeIcons.strokeRoundedNotification02,
-                color: AppColors.leadingTColor,
+                color: AppColors.seed,
                 size: 24.0, // optional: match your design
               ),
             ),

@@ -4,6 +4,7 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../../core/constant/app_colors.dart';
 import '../../../../core/constant/app_route/app_route.dart';
 import '../../../../core/constant/size.dart';
+import '../../../home/presentation/pages/home_Screen.dart';
 import '../widgets/header_section.dart';
 import 'other_travel_details_screen.dart';
 
@@ -24,7 +25,7 @@ class _CustomDeclarationScreenState extends State<CustomDeclarationScreen> {
         title: Text('Travel'),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: (){ AppRoutes.pushAndRemoveUntil(context, page: HomeScreen());}, icon: Icon(Icons.home))
         ],
       ),
       body: SafeArea(
@@ -36,7 +37,7 @@ class _CustomDeclarationScreenState extends State<CustomDeclarationScreen> {
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(AppSizes.normalPadding),
-                color: AppColors.leadingTColor,
+                color: AppColors.seed,
                 child: Text(
                   'Bangladesh Travel Information System',
                   style: AppSizes.stackText(context),

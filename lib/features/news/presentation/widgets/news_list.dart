@@ -1,20 +1,19 @@
+import 'package:egov_bd/core/constant/app_route/app_route.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/constant/app_route/app_route.dart';
-import '../../../news/presentation/pages/news_webview_screen.dart';
 import '../data/json_data.dart';
-import '../model/ngas_data_model.dart';
-import '../pages/ngas_webview_screen.dart';
+import '../model/news_data_model.dart';
+import '../pages/news_webview_screen.dart';
 
-class Ngas_list extends StatelessWidget {
-  const Ngas_list({
+class News_list extends StatelessWidget {
+  const News_list({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<NgaDatum>>(
-      future: loadNgAsDataModel(),
+    return FutureBuilder<List<BdNewsChannel>>(
+      future: loadNewsDataModel(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(child: CircularProgressIndicator());
@@ -22,23 +21,23 @@ class Ngas_list extends StatelessWidget {
           return Center(child: Text("Error: ${snapshot.error}"));
         }
 
-        final ngaDataList = snapshot.data ?? [];
+        final newsDataList = snapshot.data ?? [];
 
-        if (ngaDataList.isEmpty) {
-          return const Center(child: Text("No agencies found."));
+        if (newsDataList.isEmpty) {
+          return const Center(child: Text("No News List found."));
         }
 
         return ListView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          itemCount: ngaDataList.length,
+          itemCount: newsDataList.length,
           itemBuilder: (context, index) {
-            final agency = ngaDataList[index];
+            final agency = newsDataList[index];
             return GestureDetector(
               onTap: () {
-                AppRoutes.push(context, page: NgasWebviewScreen(url: agency.website!,
-                  title: agency.agencyName ?? "News",));
-                print('data');
+               AppRoutes.push(context, page: NewsWebviewScreen(url: agency.website!,
+                 title: agency.name ?? "News",));
+                // print('data');
               },
               child: Card(
                 margin: const EdgeInsets.symmetric(vertical: 10),
@@ -59,8 +58,8 @@ class Ngas_list extends StatelessWidget {
                     },
                     errorBuilder: (context, error, stackTrace) => const Icon(Icons.broken_image, size: 40),
                   ),
-                  title: Text(agency.agencyName ?? 'No Name'),
-                  subtitle: Text(agency.function ?? 'No Function'),
+                  title: Text(agency.name ?? 'No Name'),
+                  // subtitle: Text(agency.function ?? 'No Function'),
                   trailing: const Icon(Icons.arrow_forward_ios_rounded),
                 ),
               ),

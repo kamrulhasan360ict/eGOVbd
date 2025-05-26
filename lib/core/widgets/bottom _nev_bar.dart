@@ -107,6 +107,7 @@ import 'package:hugeicons/hugeicons.dart';
 
 import '../../features/mobile_id/presentation/pages/passport_information.dart';
 import '../../features/mobile_id/presentation/pages/passport_update.dart';
+import '../../features/news/presentation/pages/news_channel_list_screen.dart';
 
 class MainBottomNavScreen extends StatefulWidget {
   const MainBottomNavScreen({super.key});
@@ -120,8 +121,9 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
 
   final List<Widget?> screens = const [
     HomeScreen(),
-    Center(child: Text("🛒 News")),
+    // Center(child: Text("🛒 News")),
 
+    NewsChannelListScreen(),
     PassportInformation(),
 
     Center(child: Text("❤️ Scan QR")),

@@ -157,9 +157,9 @@ class _PassportInformationState extends State<PassportInformation> {
                             backgroundColor: AppColors.seed,
                           ),
                           onPressed: () {
-                            if (_formKey.currentState!.validate()) {
-                              Navigator.of(context).pop();
-                            }
+                            // if (_formKey.currentState!.validate()) {
+                            //   Navigator.of(context).pop();
+                            // }
                           },
                           child: Text(
                             "Yes",

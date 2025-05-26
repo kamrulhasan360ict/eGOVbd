@@ -12,6 +12,7 @@ class NgAsDataModel {
   final List<NgaDatum>? ngaData;
 
   NgAsDataModel({
+
     this.ngaData,
   });
 
